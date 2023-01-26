@@ -1,9 +1,14 @@
 import React from 'react';
 
+import './App.css';
+import { Header } from './components/index';
+
+
+
 const App = () => {
   return (
     <div>
-      <h1>Tesla Clone</h1>
+      <Header />
     </div>
   );
 }

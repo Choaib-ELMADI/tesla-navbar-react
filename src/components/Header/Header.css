@@ -1,0 +1,63 @@
+.app__navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2.5rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.app__navbar-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__navbar-logo img {
+    width: 140px;
+    aspect-ratio: 4;
+    object-fit: cover;
+}
+
+.app__navbar-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.app__navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.app__navbar-list li a {
+    position: relative;
+}
+
+.app__navbar-item-background {
+    position: absolute;
+    top: 0;
+    width: auto;
+    height: 100%;
+    background: rgba(204, 204, 204, 0);
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: .2s;
+}
+
+.app__navbar-list li:hover ~ .app__navbar-item-background {
+    background: rgba(204, 204, 204, 0.3);
+}

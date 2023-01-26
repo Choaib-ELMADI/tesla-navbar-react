@@ -1,0 +1,12 @@
+:root {
+    --black:     #000;
+    --white:     #e4e4e4;
+    --main__font:  system-ui;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main__font);
+}
