@@ -33,31 +33,25 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
 }
 
 .app__navbar-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
 }
 
-.app__navbar-list li a {
-    position: relative;
+:is(.app__navbar-items, .app__navbar-links) li {
+    padding: 0 1rem;
 }
 
 .app__navbar-item-background {
     position: absolute;
     top: 0;
-    width: auto;
-    height: 100%;
-    background: rgba(204, 204, 204, 0);
+    bottom: 0;
+    background: rgba(204, 204, 204, .3);
     padding: 6px 12px;
     border-radius: 4px;
-    transition: .2s;
-}
-
-.app__navbar-list li:hover ~ .app__navbar-item-background {
-    background: rgba(204, 204, 204, 0.3);
+    transition: .3s;
+    z-index: -1;
 }
